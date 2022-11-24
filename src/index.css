@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "SegoePrint";
+  src: local("SegoePrint"), url("./fonts/segoepr.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: SegoePrint;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+  /* font-size: 40px; */
+  text-transform: lowercase;
+}
