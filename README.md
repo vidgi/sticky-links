@@ -11,6 +11,7 @@ packages:
 
 - [react-draggable](https://github.com/react-grid-layout/react-draggable/)
 - [styled-components](https://styled-components.com/)
+- [segoe print font](https://learn.microsoft.com/en-us/typography/font-list/segoe-print)
 
 to add (maybe):
 
