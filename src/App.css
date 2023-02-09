@@ -1,3 +1,7 @@
 .App {
   text-align: center;
 }
+
+.multiply {
+  mix-blend-mode: multiply;
+}

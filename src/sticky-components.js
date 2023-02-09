@@ -20,6 +20,24 @@ export function StickyNote(props) {
   );
 }
 
+export function StickyImageNote(props) {
+  return (
+    <>
+      <Draggable defaultPosition={props.position} key={props.key} nodeRef={props.nodeRef}>
+        <div ref={props.nodeRef}>
+          <props.color id={props.key}>
+            {
+              <>
+                <img height="190em" className="multiply" src={props.image} alt="notes" />
+              </>
+            }
+          </props.color>
+        </div>
+      </Draggable>
+    </>
+  );
+}
+
 export function HtmlLink(props) {
   return (
     <>

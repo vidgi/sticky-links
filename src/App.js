@@ -2,8 +2,8 @@ import "./App.css";
 import "./fonts/segoepr.ttf";
 
 import React, { useState, useRef, useEffect } from "react";
-import { StickyLinkData } from "./sticky-data";
-import { StickyNote } from "./sticky-components";
+import { StickyLinkData, StickyImageData } from "./sticky-data";
+import { StickyNote, StickyImageNote } from "./sticky-components";
 
 function App() {
   const [positions, setPositions] = useState({});
@@ -14,7 +14,7 @@ function App() {
     const existingDivPositions = JSON.parse(localStorage.getItem("positions_div"));
     setPositions(existingDivPositions);
     setHasLoaded(true);
-    console.log(existingDivPositions);
+    // console.log(existingDivPositions);
   }, []);
 
   useEffect(() => {
@@ -26,6 +26,9 @@ function App() {
       <>
         {StickyLinkData.map((item) => (
           <StickyNote key={item.key} id={item.id} color={item.color} links={item.links} position={item.position} nodeRef={nodeRef} />
+        ))}
+        {StickyImageData.map((item) => (
+          <StickyImageNote key={item.key} id={item.id} color={item.color} image={item.image} position={item.position} nodeRef={nodeRef} />
         ))}
       </>
     </div>
