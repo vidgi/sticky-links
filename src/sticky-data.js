@@ -1,6 +1,9 @@
 import sketch1 from "./img/sketch1.jpeg";
 import sketch2 from "./img/sketch2.jpeg";
 import sketch3 from "./img/sketch3.jpeg";
+import sketch4 from "./img/sketch4.jpeg";
+import sketch5 from "./img/sketch5.jpg";
+import sketch6 from "./img/sketch6.png";
 
 import { YellowSticky, PinkSticky, PurpleSticky, GreenSticky, BlueSticky } from "./colored-sticky-styles";
 export const StickyLinkData = [
@@ -88,6 +91,12 @@ export const StickyLinkData = [
     links: ["https://www.texasmonthly.com/arts-entertainment/houston-prophetic-city-or-pathetic-city/"],
     position: { x: 950, y: 400 },
   },
+  {
+    key: 19,
+    color: YellowSticky,
+    links: ["i've been struggling with"],
+    position: { x: 950, y: 400 },
+  },
 ];
 
 export const StickyImageData = [
@@ -108,5 +117,23 @@ export const StickyImageData = [
     color: YellowSticky,
     image: sketch3,
     position: { x: 750, y: 350 },
+  },
+  {
+    key: 18,
+    color: PinkSticky,
+    image: sketch4,
+    position: { x: 1150, y: 70 },
+  },
+  {
+    key: 20,
+    color: PurpleSticky,
+    image: sketch5,
+    position: { x: 760, y: 250 },
+  },
+  {
+    key: 21,
+    color: GreenSticky,
+    image: sketch6,
+    position: { x: 510, y: 450 },
   },
 ];
