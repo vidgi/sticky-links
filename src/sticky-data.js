@@ -93,9 +93,9 @@ export const StickyLinkData = [
   },
   {
     key: 19,
-    color: YellowSticky,
-    links: ["i've been struggling with"],
-    position: { x: 950, y: 400 },
+    color: BlueSticky,
+    links: ["sign up by march 12th!!!", "https://www.href.place"],
+    position: { x: 1100, y: 350 },
   },
 ];
 
