@@ -3,7 +3,7 @@ import Draggable from "react-draggable";
 export function StickyNote(props) {
   return (
     <>
-      <Draggable defaultPosition={props.position} key={props.key} nodeRef={props.nodeRef}>
+      <Draggable cancel="a" defaultPosition={props.position} key={props.key} nodeRef={props.nodeRef}>
         <div ref={props.nodeRef}>
           <props.color id={props.key}>
             {
