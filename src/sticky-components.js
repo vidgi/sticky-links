@@ -8,6 +8,13 @@ export function StickyNote(props) {
           <props.color id={props.key}>
             {
               <>
+                {props.name !== undefined ? (
+                  <>
+                    {props.name}: <br />
+                  </>
+                ) : (
+                  <></>
+                )}
                 {props.links.map((item) => (
                   <HtmlLink key={item} value={item} />
                 ))}
